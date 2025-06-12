@@ -13,6 +13,7 @@ Users should be able to:
 ### Links
 
 - [Live Site URL](https://links-theta-silk.vercel.app/)
+- [Repository](https://github.com/talvezjoaopedro/social-links-app)
 - [Schedule a Call](https://cal.com/talvezjoaopedro/)
 - [Portfolio](https://talvezjoaopedro.framer.website/)
 
