@@ -11,7 +11,7 @@ interface socialLink {
 const socials: socialLink[] = [
     {label: "Twitter", url: "https://x.com/talvezjoaopedro", icon: "vercel.svg"},
     {label: "GitHub", url: "https://github.com/talvezjoaopedro", icon: "vercel.svg"},
-    {label: "Linked In", url: "https://linkedin.com/in/talvezoaopedro", icon: "vercel.svg"},
+    {label: "LinkedIn", url: "https://www.linkedin.com/in/talvezjoaopedro/", icon: "vercel.svg"},
     {label: "Layers", url: "https://layers.to/talvezjoaopedro", icon: "vercel.svg"}
 ];
 
