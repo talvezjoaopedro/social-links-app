@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import SocialLinks from "@/components/socialLinks/SocialLinks";
@@ -7,10 +9,28 @@ import styles from "../styles/mat.module.scss";
 export default function Home() {
     return (
         <div className={styles.container}>
-            {/* <div className="min-w-2 w-full border-r-neutral-800 border-1 h-f"></div> */}
-            <div className={styles.containerSecondary}>
+            <div
+                className={`${styles.containerSecondary} ${styles.containerTop}`}
+            >
                 <div className={styles.containerStart}></div>
-                <div className={styles.containerCenter}></div>
+                <div className={`${styles.containerCenter} p-4 pt-0`}>
+                    <div className="relative h-full overflow-hidden">
+                        <Image
+                            src={"grid.svg"}
+                            alt="grid"
+                            height={634}
+                            width={448}
+                            className="absolute bottom-0 left-0"
+                        ></Image>
+                        <Image
+                            src={"animation-1.svg"}
+                            alt="grid"
+                            height={634}
+                            width={448}
+                            className="absolute bottom-0.5 left-0"
+                        ></Image>
+                    </div>
+                </div>
                 <div className={styles.containerEnd}></div>
             </div>
             <div className={styles.containerMain}>
@@ -69,27 +89,30 @@ export default function Home() {
                 </div>
                 <div className={styles.containerEnd}></div>
             </div>
-            <div className={styles.containerSecondary}>
+            <div
+                className={`${styles.containerSecondary} ${styles.containerBottom}`}
+            >
                 <div className={styles.containerStart}></div>
-                <div className={styles.containerCenter}></div>
+                <div className={`${styles.containerCenter} p-4 pb-0`}>
+                    <div className="relative h-full overflow-hidden">
+                        <Image
+                            src={"grid.svg"}
+                            alt="grid"
+                            height={634}
+                            width={448}
+                            className="absolute top-0 left-0"
+                        ></Image>
+                        <Image
+                            src={"animation-2.svg"}
+                            alt="grid"
+                            height={634}
+                            width={448}
+                            className="absolute top-0.5 left-0"
+                        ></Image>
+                    </div>
+                </div>
                 <div className={styles.containerEnd}></div>
             </div>
-            {/* <div className="bg-neutral-800 flex justify-center rounded-4xl w-full max-w-lg flex-col items-center pt-8 p-6 gap-2.5">
-                <Image
-                    className="rounded-4xl"
-                    width={120}
-                    height={120}
-                    src={"/jp.jpg"}
-                    alt={"avatar"}
-                />
-                <h1 className="text-center text-2xl font-medium tracking-tight">
-                    João Pedro Magalhães
-                </h1>
-                <h2 className="text-center text-neutral-400 font-medium tracking-tight">
-                    Designer & Developer
-                </h2>
-                <SocialLinks></SocialLinks>
-            </div> */}
         </div>
     );
 }
