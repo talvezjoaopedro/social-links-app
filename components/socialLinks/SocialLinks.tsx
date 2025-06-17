@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import linkStyles from "./socialLinks.module.scss";
+import linkStyles from "./SocialLinks.module.scss";
 import styles from "/styles/mat.module.scss";
 import Squares from "../squares/Squares";
 // import Image from 'next/image';
