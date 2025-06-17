@@ -22,7 +22,7 @@ Users should be able to:
 
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
-- Typescript
+- [Typescript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- SCSS custom properties
+- [SCSS custom properties](https://sass-lang.com/)
 - [Motion](https://motion.dev/)

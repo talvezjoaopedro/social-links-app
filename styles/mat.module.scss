@@ -1,0 +1,104 @@
+@import './variables.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+	background: $color-primary;
+	$container: &;
+	font-family: var(--font-geist-sans);
+
+    &Secondary {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+    }
+
+    &Main {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+
+		#{$container}Center {
+			min-height: 400px;
+		}
+    }
+
+	&Start,
+	&End {
+		outline: $border;
+		outline-offset: -1px;
+		width: 100%;
+		min-height: 140px;
+		height: 100%;
+	}	
+
+	&Center {
+		outline: $border;
+		outline-offset: -1px;
+		width: 100%;
+		min-width: 400px;
+		max-width: 480px;
+	}
+}
+
+.card {
+	position: relative;
+	margin: 16px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	outline: $border;
+	outline-offset: -1px;
+	min-height: 212px;
+
+	&Avatar {
+		flex: 1;
+		outline: $border;
+		outline-offset: -1px;
+	}
+
+	&Heading {
+		flex: 1;
+		padding: 16px;
+		outline: $border;
+		outline-offset: -1px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+
+.border {
+	border: $border;
+}
+
+.cta {
+	display: flex;
+	flex-direction: row;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 22px;
+	padding: 4px 4px 4px 12px;
+	color: black;
+	background: white;
+	border-radius: 28px;
+	margin-top: 22px;
+
+	&Arrow {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 100%;
+		height: 24px;
+		width: 24px;
+		background: black;
+	}
+}
+
+.textAccent {
+	color: $color-accent;
+}

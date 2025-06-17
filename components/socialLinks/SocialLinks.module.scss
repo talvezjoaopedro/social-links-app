@@ -1,0 +1,30 @@
+@import 'styles/variables.scss';
+
+.link {
+    &Item {
+        display: flex;
+        width: 100%;
+        background-color: $color-primary;
+        align-items: center;
+        justify-content: center;
+        padding: 28px;
+        line-height: 1;
+        font-size: 21px;
+        transition: all 150ms ease-in 0ms;
+        
+        &:not(:last-of-type) {
+            border-bottom: $border;
+        }
+
+        &:hover {
+            background-color: rgba(0,0,0,0.1);
+        }
+    }
+
+    &List {
+        position: relative;
+        margin: 16px;
+        outline: $border;
+        outline-offset: -1px;
+    }
+}

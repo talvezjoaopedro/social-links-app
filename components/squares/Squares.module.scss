@@ -1,0 +1,28 @@
+@import 'styles/variables.scss';
+
+.square {
+    &Tl, &Tr, &Bl, &Br {
+        position: absolute;
+        outline: $border;
+        outline-offset: -1px;
+        height: 16px;
+        width: 16px;
+        pointer-events: none;
+    }
+
+    &Tl, &Tr {
+        top: -16px;
+    }
+
+    &Bl, &Br {
+        bottom: -16px;
+    }
+
+    &Tl, &Bl {
+        left: -16px;
+    }
+
+    &Tr, &Br {
+        right: -16px;
+    }
+}
