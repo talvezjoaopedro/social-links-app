@@ -28,11 +28,9 @@
 				flex: 1;
 			}
 		}
-		
 
 		&#{$container}Bottom {
 			flex: 1;
-			// max-height: 100%;
 		}
     }
 
@@ -90,10 +88,6 @@
 		flex-direction: column;
 		justify-content: space-between;
 	}
-}
-
-.border {
-	border: $border;
 }
 
 .cta {
