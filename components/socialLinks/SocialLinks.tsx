@@ -42,7 +42,6 @@ const SocialLinks = () => {
             className={linkStyles.linkItem}
             href={social.url}
         >
-            {/* <Image src={social.icon} height={16} width={16} alt={social.label}></Image> */}
             <p>{social.label}</p>
         </Link>
     ));
