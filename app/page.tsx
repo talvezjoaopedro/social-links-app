@@ -13,8 +13,8 @@ export default function Home() {
                 className={`${styles.containerSecondary} ${styles.containerTop}`}
             >
                 <div className={styles.containerStart}></div>
-                <div className={`${styles.containerCenter} p-4 pt-0`}>
-                    <div className="relative h-full overflow-hidden">
+                <div className={`${styles.containerCenter}`}>
+                    <div className="relative h-full overflow-hidden m-4 -mt-4">
                         <Image
                             src={"grid.svg"}
                             alt="grid"
@@ -93,8 +93,8 @@ export default function Home() {
                 className={`${styles.containerSecondary} ${styles.containerBottom}`}
             >
                 <div className={styles.containerStart}></div>
-                <div className={`${styles.containerCenter} p-4 pb-0`}>
-                    <div className="relative h-full overflow-hidden">
+                <div className={`${styles.containerCenter} pt-4`}>
+                    <div className="relative h-full overflow-hidden mx-4">
                         <Image
                             src={"grid.svg"}
                             alt="grid"

@@ -42,7 +42,12 @@ const SocialLinks = () => {
             className={linkStyles.linkItem}
             href={social.url}
         >
-            <p>{social.label}</p>
+            <div className={linkStyles.linkItemStart}>
+                <p>{social.label}</p>
+            </div>
+            <div className={linkStyles.linkItemEnd}>
+                <p>{social.label}</p>
+            </div>
         </Link>
     ));
 
