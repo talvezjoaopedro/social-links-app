@@ -1,10 +1,9 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import SocialLinks from "@/components/socialLinks/SocialLinks";
 import Squares from "@/components/squares/Squares";
 import styles from "../styles/mat.module.scss";
+import Grid from "@/components/grid/Grid";
 
 export default function Home() {
     return (
@@ -12,7 +11,9 @@ export default function Home() {
             <div
                 className={`${styles.containerSecondary} ${styles.containerTop}`}
             >
-                <div className={styles.containerStart}></div>
+                <div className={styles.containerStart}>
+                    <Grid direction="ltr"></Grid>
+                </div>
                 <div className={`${styles.containerCenter}`}>
                     <div className="relative h-full overflow-hidden m-4 -mt-4">
                         <Image
@@ -31,10 +32,14 @@ export default function Home() {
                         ></Image>
                     </div>
                 </div>
-                <div className={styles.containerEnd}></div>
+                <div className={styles.containerEnd}>
+                    <Grid direction="rtl"></Grid>
+                </div>
             </div>
             <div className={styles.containerMain}>
-                <div className={styles.containerStart}></div>
+                <div className={styles.containerStart}>
+                    <Grid direction="ltr"></Grid>
+                </div>
                 <div className={styles.containerCenter}>
                     <div className={styles.card}>
                         <div className={styles.cardAvatar}>
@@ -57,19 +62,33 @@ export default function Home() {
                                     Designer & Developer
                                 </h2>
                                 <p
-                                    className={`${styles.textAccent} text-sm leading-none mt-2.5 mr-1`}
+                                    className={`${styles.textAccent} text-sm leading-none mt-2.5 mr-1 hidden xl:block`}
                                 >
                                     Experienced in building web and mobile apps,
                                     landing pages, and scalable design systems.
                                 </p>
+
+                                <p
+                                    className={`${styles.textAccent} text-sm leading-none mt-2.5 mr-1 xl:hidden`}
+                                >
+                                    Web and mobile apps, landing pages, and
+                                    scalable design systems.
+                                </p>
                             </div>
                             <Link
-                                href={"https://cal.com/talvezjoaopedro"}
+                                href={"mailto:joaopedro@kunskap.studio"}
                                 target="_blank"
                                 className={`${styles.cta}`}
                             >
-                                <div className={`${styles.ctaLabel} flex-1`}>
+                                <div
+                                    className={`${styles.ctaLabel} flex-1 whitespace-nowrap hidden xl:block`}
+                                >
                                     Start your project
+                                </div>
+                                <div
+                                    className={`${styles.ctaLabel} flex-1 whitespace-nowrap xl:hidden`}
+                                >
+                                    Start project
                                 </div>
                                 <div className={styles.ctaArrow}>
                                     <Image
@@ -87,12 +106,16 @@ export default function Home() {
                     </div>
                     <SocialLinks></SocialLinks>
                 </div>
-                <div className={styles.containerEnd}></div>
+                <div className={styles.containerEnd}>
+                    <Grid direction="rtl"></Grid>
+                </div>
             </div>
             <div
                 className={`${styles.containerSecondary} ${styles.containerBottom}`}
             >
-                <div className={styles.containerStart}></div>
+                <div className={styles.containerStart}>
+                    <Grid direction="ltr"></Grid>
+                </div>
                 <div className={`${styles.containerCenter} pt-4`}>
                     <div className="relative h-full overflow-hidden mx-4">
                         <Image
@@ -111,7 +134,9 @@ export default function Home() {
                         ></Image>
                     </div>
                 </div>
-                <div className={styles.containerEnd}></div>
+                <div className={styles.containerEnd}>
+                    <Grid direction="rtl"></Grid>
+                </div>
             </div>
         </div>
     );

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import linkStyles from "./SocialLinks.module.scss";
-import styles from "/styles/mat.module.scss";
+import styles from "./SocialLinks.module.scss";
 import Squares from "../squares/Squares";
 // import Image from 'next/image';
 
@@ -39,20 +38,20 @@ const SocialLinks = () => {
         <Link
             key={index}
             target="_blank"
-            className={linkStyles.linkItem}
+            className={styles.linkItem}
             href={social.url}
         >
-            <div className={linkStyles.linkItemStart}>
+            <div className={styles.linkItemStart}>
                 <p>{social.label}</p>
             </div>
-            <div className={linkStyles.linkItemEnd}>
+            <div className={styles.linkItemEnd}>
                 <p>{social.label}</p>
             </div>
         </Link>
     ));
 
     return (
-        <div className={linkStyles.linkList}>
+        <div className={styles.linkList}>
             {listItems}
             <Squares></Squares>
         </div>
