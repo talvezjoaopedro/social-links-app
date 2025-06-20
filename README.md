@@ -14,6 +14,7 @@ Users should be able to:
 
 - [Live Site URL](https://links-theta-silk.vercel.app/)
 - [Repository](https://github.com/talvezjoaopedro/social-links-app)
+- [Figma file](https://www.figma.com/design/pLH2CnTzgpTOqB56ueFE5Y/Next.JS-Challenges?node-id=8-223&t=narhR23vvZrguZXZ-1)
 - [Schedule a Call](https://cal.com/talvezjoaopedro/)
 - [Portfolio](https://talvezjoaopedro.framer.website/)
 
