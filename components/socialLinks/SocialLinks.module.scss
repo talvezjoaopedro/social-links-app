@@ -16,15 +16,12 @@
         border-bottom: $border;
         overflow: hidden;
         transform: translateY(0px);
+        max-height: 80px;
         $item: &;
 
         &:nth-child(4) {
             border-bottom-width: 0px;
         }
-
-        // &:hover {
-        //     background-color: rgba(0,0,0,0.1);
-        // }
 
         &Start, &End {
             width: 100%;
@@ -44,6 +41,10 @@
                 border: 0px none transparent;
                 outline: none;
             }
+        }
+
+        &Start {
+            position: relative;
         }
 
         &End {
