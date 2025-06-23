@@ -15,6 +15,9 @@
         cursor: pointer;
         border-bottom: $border;
         overflow: hidden;
+        
+        -ms-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
         transform: translateY(0px);
         max-height: 80px;
         $item: &;
@@ -36,6 +39,8 @@
 
         &:hover, &:focus {
             #{$item}Start, #{$item}End {
+                -ms-transform: translateY(-80px);
+                -webkit-transform: translateY(-80px);
                 transform: translateY(-80px);
                 box-shadow: none;
                 border: 0px none transparent;
